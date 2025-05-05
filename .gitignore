@@ -135,4 +135,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-.env 
+.env #nhe9js59qtmuy7dO
+#mongodb+srv://<db_username>:<db_password>@cluster0.lk05awy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
