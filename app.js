@@ -133,7 +133,7 @@ async function startServer() {
         app.use((req, res) => {
             res.status(404).render('404');
         }); 
-        const PORT = process.env.PORT || 3000;
+        const PORT = process.env.PORT || 8001;
         app.listen(PORT, () =>
             console.log(`🚀 Server listening on http://localhost:${PORT}`)
         );
