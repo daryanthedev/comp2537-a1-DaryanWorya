@@ -52,9 +52,9 @@ async function startServer() {
                     dbName: process.env.MONGODB_DATABASE,
                     collectionName: 'sessions',
                     crypto: { secret: process.env.MONGODB_SESSION_SECRET },
-                    ttl: 60 * 60,               // 1 hour, in seconds
+                    ttl: 60 * 60,               
                 }),
-                cookie: { maxAge: 1000 * 60 * 60 } // 1 hour, in ms
+                cookie: { maxAge: 1000 * 60 * 60 } 
             })
         ); 
 
@@ -135,7 +135,7 @@ async function startServer() {
         }); 
         const PORT = process.env.PORT || 8001;
         app.listen(PORT, () =>
-            console.log(`🚀 Server listening on http://localhost:${PORT}`)
+            console.log(`Server listening on http://localhost:${PORT}`)
         );
 
     } catch (err) {
